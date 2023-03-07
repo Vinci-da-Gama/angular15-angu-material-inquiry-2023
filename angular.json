@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "angular15app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -32,6 +32,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules"]
+            },
             "styles": [
               "src/styles.scss"
             ],
